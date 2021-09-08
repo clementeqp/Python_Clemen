@@ -1,2 +1,4 @@
-# Python_Clemen
-Repaso, y ejercicios en Python
+# PYTHON
+### Teoria y ejercios en Python
+
+#### Clemente Quintana Pozo
