@@ -13,19 +13,19 @@ con el formato anterior y devuelva otro DataFrame
 con el mínimo, el máximo y la media de dada columna.
 """
 import pandas as pd
-
+path_file= './datos/cotizacion.csv'
 
 def cotizar(file):
     df =pd.read_csv(file, sep=';', header=0, index_col=0, decimal=',')
     print(df)
     return df.describe()
 
-print(cotizar('cotizacion.csv').loc[['min', 'max', 'mean']])
-print(cotizar('cotizacion.csv').loc[['min', 'max', 'mean'], ['Final', 'Efectivo']])
+print(cotizar(path_file).loc[['min', 'max', 'mean']])
+print(cotizar(path_file).loc[['min', 'max', 'mean'], ['Final', 'Efectivo']])
 
 def resumen_cotizaciones(file):
     df =pd.read_csv(file, sep=';', header=0, index_col=0, decimal=',',thousands='.')
     #print(df)
     return pd.DataFrame([df.min(), df.max(), df.mean()], index=['Mínimo', 'Máximo', 'Media'])
 
-print(resumen_cotizaciones('cotizacion.csv'))
+print(resumen_cotizaciones(path_file))
