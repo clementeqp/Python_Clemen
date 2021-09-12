@@ -17,7 +17,14 @@ anios=[i for i in range(2010,2022)]
     
 ventas=[25000, 26000, 30000, 34000, 35000, 36000, 32000,38000,39000, 41000, 32500,42000]
 grafica, ax = plt.subplots()
-ax.plot(anios, ventas)
+#ax.plot(anios, ventas)
+# opciones
+ax.plot(anios, ventas, color = 'tab:purple', marker = 'o',linestyle = 'dashed', label = 'Ventas')
+ax.set_title(
+    'Ventas por años de Capullin system', 
+    loc = "center", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'} 
+    )
+ax.legend(loc = 'lower right')
 plt.show()
 
 """

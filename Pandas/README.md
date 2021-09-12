@@ -57,14 +57,14 @@ Dispone de un índice que asocia un nombre a cada elemento del la serie, a trav�
         s.dtype : Devuelve el tipo de datos de los elementos de la serie s.
 
     -Acceso a los elementos de una serie
-        El acceso a los elementos de un objeto del tipo Series puede ser a través de posiciones o través de índices (nombres).
+         El acceso a los elementos de un objeto del tipo Series puede ser a través de posiciones o través de índices (nombres).
 
-        Acceso por posición
+        - Acceso por posición
         Se realiza de forma similar a como se accede a los elementos de un array.
 
         s[i] : Devuelve el elemento que ocupa la posición i+1 en la serie s.
         s[nombres]: Devuelve otra serie con los elementos con los nombres de la lista nombres en el índice.
-        Acceso por índice
+        - Acceso por índice
         s[nombre] : Devuelve el elemento con el nombre nombre en el índice.
         s[nombres] : Devuelve otra serie con los elementos correspondientes a los nombres indicadas en la lista nombres en el índice.
     - Resumen descriptivo de una serie
